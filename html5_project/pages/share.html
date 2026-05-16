@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>分享美食 - 美食分享系统</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<header>
+    <div class="container nav-wrap">
+        <div class="logo">🍜 美食分享家</div>
+        <ul class="nav-list">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="category.html">美食分类</a></li>
+            <li><a href="strategy.html">美食攻略</a></li>
+            <li><a href="share.html" class="active">分享美食</a></li>
+            <li><a href="user.html">个人中心</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="form-container">
+    <h2 class="form-title">发布我的美食分享</h2>
+    <form id="shareForm">
+        <div class="form-item">
+            <label>美食名称</label>
+            <input type="text" id="foodName" placeholder="请输入美食名称" required>
+        </div>
+        <div class="form-item">
+            <label>所属分类</label>
+            <input type="text" id="foodType" placeholder="如：川菜/粤菜/甜品" required>
+        </div>
+        <div class="form-item">
+            <label>美食评分</label>
+            <input type="text" id="foodScore" placeholder="1-5分" required>
+        </div>
+        <div class="form-item">
+            <label>美食评价</label>
+            <textarea id="foodContent" rows="6" placeholder="分享你的美食体验"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%;">提交分享</button>
+    </form>
+</div>
+
+<footer>美食分享系统 © 2025</footer>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>美食分享系统 - 首页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- 导航 -->
+<header>
+    <div class="container nav-wrap">
+        <div class="logo">🍜 美食分享家</div>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="pages/category.html">美食分类</a></li>
+            <li><a href="pages/strategy.html">美食攻略</a></li>
+            <li><a href="pages/share.html">分享美食</a></li>
+            <li><a href="pages/login.html">登录</a></li>
+            <li><a href="pages/register.html">注册</a></li>
+            <li><a href="pages/user.html">个人中心</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- 轮播图 -->
+<div class="banner">
+    <img src="images/banner1.jpg" class="banner-img show" alt="轮播">
+    <img src="images/banner2.jpg" class="banner-img" alt="轮播">
+    <img src="images/banner3.jpg" class="banner-img" alt="轮播">
+</div>
+
+<!-- 热门美食 -->
+<div class="container">
+    <div class="title-box">
+        <h2>🔥 热门美食推荐</h2>
+    </div>
+    <div class="food-row">
+        <div class="food-card">
+            <img src="images/food1.jpg" alt="麻辣火锅">
+            <div class="food-info">
+                <h3>麻辣火锅</h3>
+                <p>四川经典，麻辣鲜香</p>
+                <a href="pages/detail.html" class="btn">查看详情</a>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="images/food2.jpg" alt="小龙虾">
+            <div class="food-info">
+                <h3>麻辣小龙虾</h3>
+                <p>夜宵必备，肉质Q弹</p>
+                <a href="pages/detail1.html" class="btn">查看详情</a>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="images/food3.jpg" alt="烧烤">
+            <div class="food-info">
+                <h3>特色烧烤</h3>
+                <p>炭火烤制，焦香四溢</p>
+                <a href="pages/detail2.html" class="btn">查看详情</a>
+            </div>
+        </div>
+        <div class="food-card">
+            <img src="images/food4.jpg" alt="奶茶">
+            <div class="food-info">
+                <h3>手作奶茶</h3>
+                <p>丝滑醇厚，甜而不腻</p>
+                <a href="pages/detail3.html" class="btn">查看详情</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 美食特色专区（10个跳转按钮） -->
+<div class="container">
+    <div class="title-box">
+        <h2>🍽 美食特色专区</h2>
+    </div>
+    <style>
+        .link-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 60px;
+        }
+        .link-btn {
+            display: inline-block;
+            width: 210px;
+            padding: 14px 0;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+            box-shadow: 0 3px 10px rgba(255,107,53,0.15);
+        }
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,107,53,0.25);
+        }
+    </style>
+    <div class="link-box">
+        <a href="pages/rank.html" class="link-btn">🏆 美食排行榜</a>
+        <a href="pages/course.html" class="link-btn">👨‍🍳 美食教程</a>
+        <a href="pages/shop.html" class="link-btn">📍 美食探店</a>
+        <a href="pages/healthy.html" class="link-btn">🥗 健康饮食</a>
+        <a href="pages/festival.html" class="link-btn">🎊 节日美食</a>
+        <a href="pages/kids.html" class="link-btn">👶 儿童美食</a>
+        <a href="pages/fit.html" class="link-btn">💪 减脂美食</a>
+        <a href="pages/qa.html" class="link-btn">❓ 美食问答</a>
+        <a href="pages/collect.html" class="link-btn">📜 美食文化</a>
+        <a href="pages/calendar.html" class="link-btn">📅 美食日历</a>
+    </div>
+</div>
+
+<!-- 底部 -->
+<footer>
+    美食分享系统 © 2026 HTML5期末
+</footer>
+
+<script src="../js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
